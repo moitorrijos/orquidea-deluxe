@@ -95,43 +95,47 @@ a.cta-button
   padding: 1.5rem 2.5rem
   text-decoration: none
   color: $text-color
-  font-size: 1.2rem
   text-transform: uppercase
-  position: relative
-  letter-spacing: 2px
+  border: 2px solid $text-color
+  border-radius: 2px
 
-  &:before, &:after
-    content: ''
-    display: block
-    position: absolute
-    width: 20%
-    height: 50%
-    transition: all 0.5s ease
-    border-radius: 2px
-    border-color: transparent
-    border-style: solid
-    border-width: 2px
+  @media screen and (min-width: 900px)
+    letter-spacing: 2px
+    font-size: 1.2rem
+    position: relative
+    border: none
 
-  &:before
-    top: 0
-    left: 0
-    border-top-color: $text-color
-    border-left-color: $text-color
-
-  &:after
-    bottom: 0
-    right: 0
-    border-bottom-color: $text-color
-    border-right-color: $text-color
-
-  &:hover
     &:before, &:after
-      width: 100%
-      height: 100%
+      content: ''
+      display: block
+      position: absolute
+      width: 50%
+      height: 50%
+      transition: all 0.5s ease
+      border-color: transparent
+      border-style: solid
+      border-width: 2px
+
     &:before
-      border-left-color: $text-color
+      top: 0
+      left: 0
       border-top-color: $text-color
+      border-left-color: $text-color
+
     &:after
+      bottom: 0
+      right: 0
       border-bottom-color: $text-color
       border-right-color: $text-color
-  
+
+    &:hover
+      &:before, &:after
+        width: 100%
+        height: 100%
+      &:before
+        border-left-color: $text-color
+        border-top-color: $text-color
+      &:after
+        border-bottom-color: $text-color
+        border-right-color: $text-color
+    
