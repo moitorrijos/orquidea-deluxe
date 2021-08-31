@@ -1,0 +1,101 @@
+@import 'generic/normalize'
+@import 'generic/box-sizing'
+
+$background-color: #050505
+$text-color: #fefefe
+
+body
+  background-color: $background-color
+  color: $text-color
+  font-family: 'Work Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
+  min-height: 100vh
+  display: grid
+  place-items: center
+  text-align: center
+  padding: 2rem
+  font-size: 16px
+  font-weight: 300
+  line-height: 
+  position: relative
+  overflow: hidden
+
+.esquina-arriba-izq, .esquina-abajo-izq, .esquina-arriba-der, .esquina-abajo-der
+  position: absolute
+
+.esquina-arriba-izq
+  width: 50%
+  height: 50%
+  top: 2rem
+  left: 2rem
+  background:
+    image: url('../images/esquina-arriba-izq@2x.png')
+    repeat: no-repeat
+    position: left top
+
+.esquina-arriba-der
+  width: 100%
+  height: 100%
+  top: -150px
+  right: -150px
+  background:
+    image: url('../images/orquidea-esquina-arriba-derecha@2x.png')
+    repeat: no-repeat
+    size: 500px 
+    position: right top
+
+  @media screen  and (max-width: 840px)
+    top: -50px
+    right: -60px
+    background-size: 300px
+
+.esquina-abajo-der
+  width: 50%
+  height: 50%
+  bottom: 2rem
+  right: 2rem
+  background:
+    image: url('../images/esquina-abajo-der@2x.png')
+    repeat: no-repeat
+    position: right bottom
+
+.esquina-abajo-izq
+  width: 100%
+  height: 100%
+  bottom: -150px
+  left: -150px
+  background:
+    image: url('../images/orquidea-esquina-abajo-izquierda@2x.png')
+    repeat: no-repeat
+    position: left bottom
+
+  @media screen  and (max-width: 840px)
+    bottom: -50px
+    left: -60px
+    background-size: 300px
+
+.orquidea-deluxe-hero
+  transform: scale(0.85)
+
+img
+  max-width: 600px
+  width: 100%
+
+h2
+  text-align: center
+  font-size: 2rem
+  margin-bottom: 3rem
+  letter-spacing: 5px
+
+h1
+  text-transform: uppercase
+  margin: 3rem 0 5rem
+  font-size: 1.8rem
+
+a.cta-button
+  padding: 1rem 2rem
+  border: 2px solid $text-color
+  text-decoration: none
+  color: $text-color
+  font-size: 1.2rem
+  text-transform: uppercase
+  
