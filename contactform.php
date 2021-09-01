@@ -11,5 +11,5 @@
     Mensaje
     <textarea name="mensaje" id="mensaje" cols="30" rows="7"></textarea>
   </label>
-  <button type="submit">Enviar Mensaje &raquo;</button>
+  <button class="submit-button" type="submit">Enviar Mensaje &raquo;</button>
 </form>

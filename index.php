@@ -14,7 +14,7 @@
 
 get_header();
 ?>
-<div class="hide-overflow">
+<div class="main-container">
 	<div class="esquina-arriba-izq"></div>
 	<div class="esquina-arriba-der"></div>
 	<div class="esquina-abajo-izq"></div>

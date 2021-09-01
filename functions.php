@@ -145,5 +145,12 @@ function orquidea_deluxe_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+	wp_enqueue_script('axios', 'https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js', array(), _S_VERSION, true);
+	wp_enqueue_script(  'orquidea-contactform', get_template_directory_uri() . '/js/contactform.js', array('axios'), _S_VERSION, true );
+	wp_localize_script( 'orquidea-contactform', 'orquidea_obj', array(
+		'ajaxurl' => admin_url( 'admin-ajax.php' ),
+		'security' => wp_create_nonce( 'orquidea_nonce' ),
+		'image_path' => get_template_directory_uri() . '/images'
+	));
 }
 add_action( 'wp_enqueue_scripts', 'orquidea_deluxe_scripts' );

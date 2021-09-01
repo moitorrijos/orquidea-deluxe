@@ -7,13 +7,16 @@ body
   font-size: 16px
   font-weight: 300
 
-.hide-overflow
+.main-container
   position: relative
-  padding: 2rem
   overflow: hidden
   display: grid
   place-items: center
+  padding: 2rem
 
+  @media (min-width: 768px) 
+    padding: 4rem
+    
 .esquina-arriba-izq, .esquina-abajo-izq, .esquina-arriba-der, .esquina-abajo-der
   position: absolute
 
