@@ -14,17 +14,21 @@
 
 get_header();
 ?>
+<div class="hide-overflow">
+	<div class="esquina-arriba-izq"></div>
+	<div class="esquina-arriba-der"></div>
+	<div class="esquina-abajo-izq"></div>
+	<div class="esquina-abajo-der"></div>
 
-<div class="esquina-arriba-izq"></div>
-<div class="esquina-arriba-der"></div>
-<div class="esquina-abajo-izq"></div>
-<div class="esquina-abajo-der"></div>
+	<div class="orquidea-deluxe-hero">
+		<h2>Te presentamos</h2>
+		<img src="<?php echo get_template_directory_uri(); ?>/images/orquidea-deluxe-logo@2x.png" alt="Orquidea Deluxe">
+		<h1>Una Experiencia de lujo en Arraiján</h1>
+		<p>Contáctanos para conocer más</p>
+		<?php get_template_part('contactform'); ?>
+		<a href="https://ecogardensarraijan.com/wp-content/uploads/2021/08/brochure-orquidea-deluxe_compressed.pdf" class="cta-button">Descarga el Brochure</a>
+	</div>
 
-<div class="orquidea-deluxe-hero">
-	<h2>Te presentamos</h2>
-	<img src="<?php echo get_template_directory_uri(); ?>/images/orquidea-deluxe-logo@2x.png" alt="Orquidea Deluxe">
-	<h1>Una Experiencia de lujo en Arraiján</h1>
-	<a href="https://ecogardensarraijan.com/wp-content/uploads/2021/08/brochure-orquidea-deluxe_compressed.pdf" class="cta-button">Descarga el Brochure</a>
 </div>
 
 <?php

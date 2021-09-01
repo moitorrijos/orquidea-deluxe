@@ -36,7 +36,9 @@
     "map": false
   },
   "scripts": {
-    "watch": "node-sass sass/ -o ./css --source-map true --output-style compressed -w",
+    "sass": "node-sass sass/ -o ./css --source-map true --output-style compressed -w",
+    "browsersync": "browser-sync start --proxy 'orquidea.test' --files '**/*' --no-open",
+    "watch": "npm run sass & npm run browsersync",
     "compile:css": "node-sass sass/ -o ./css --output-style compressed && stylelint '*.css' --fix || true && stylelint '*.css' --fix",
     "bundle": "dir-archiver --src . --dest ../orquidea-deluxe.zip --exclude .DS_Store .stylelintrc.json .eslintrc .git .gitattributes .github .gitignore README.md composer.json composer.lock node_modules vendor package-lock.json package.json .travis.yml phpcs.xml.dist sass style.css.map"
   }

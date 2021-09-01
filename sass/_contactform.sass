@@ -1,0 +1,49 @@
+.form-horizontal
+  text-transform: uppercase
+  font-size: 1
+  text-align: left
+  display: block
+  margin: 4rem 0 6rem
+
+  @media screen and (min-width: 768px)
+    display: grid
+    gap: 2rem 10px
+    grid-template-columns: 1fr 1fr
+    grid-template-areas: "name email" "message message"
+
+  label
+    display: block
+    line-height: 1.5
+
+    &.nombre
+      grid-area: name
+
+    &.correo-electronico
+      grid-area: email
+
+    &.mensaje
+      grid-area: message
+
+    input, textarea
+      display: block
+      border: 2px solid $text-color
+      border-radius: 2px
+      width: 100%
+      background-color: $background-color
+      color: $text-color
+      padding: 0.75rem
+
+  button
+    display: block
+    border: none
+    -moz-appearance: none
+    -webkit-appearance: none
+    background-color: $background-color
+    color: $text-color
+    text-align: left
+    text-transform: uppercase
+    text-decoration: underline
+    padding: 1.5rem 0
+
+    @media screen and (min-width: 768px)
+      padding: 0
