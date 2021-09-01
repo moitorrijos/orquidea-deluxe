@@ -3,6 +3,10 @@
     Nombre
     <input type="text" name="nombre" id="nombre">
   </label>
+  <label for="telefono">
+    Teléfono
+    <input type="tel" name="telefono" id="telefono">
+  </label>
   <label for="correo-electronico" class="correo-electronico">
     Correo electrónico
     <input type="email" name="correo-electronico" id="correo-electronico">

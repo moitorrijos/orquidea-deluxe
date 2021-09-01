@@ -9,7 +9,7 @@
     display: grid
     gap: 2rem 10px
     grid-template-columns: 1fr 1fr
-    grid-template-areas: "name email" "message message" "button button"
+    grid-template-areas: "name phone" "email email" "message message" "button button"
 
   label
     display: block
@@ -17,6 +17,9 @@
 
     &.nombre
       grid-area: name
+
+    &.telefono
+      grid-area: phone
 
     &.correo-electronico
       grid-area: email
